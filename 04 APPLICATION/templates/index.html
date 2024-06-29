@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>haas</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Pacifico"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Arimo"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Hind:300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+
+  <body>
+    <main class="bgr_neu" id="bgr_main">
+      <!-- <div id="asteroid"></div> -->
+      <div class="left">
+        <div class="header">
+          <div class="logo">
+            <div class="logo2">
+              <div id="large_circle" class="large-circle">
+                <div id="small_circle" class="small-circle"></div>
+              </div>
+            </div>
+            <div class="logo1">
+              <svg
+                width="124"
+                height="45"
+                viewBox="0 0 124 45"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.344 44.992H6.784C7.68 44.992 8.128 44.544 8.128 43.648V24.256C8.128 21.0133 9.6 19.392 12.544 19.392H14.848C16.2133 19.392 17.1733 19.6907 17.728 20.288C18.3253 20.8427 18.624 21.8027 18.624 23.168V43.648C18.624 44.544 19.072 44.992 19.968 44.992H25.344C26.2827 44.992 26.752 44.544 26.752 43.648V22.784C26.752 15.8293 23.4027 12.352 16.704 12.352H14.656C11.4133 12.352 9.32267 13.504 8.384 15.808H8.128V1.344C8.128 0.447999 7.68 0 6.784 0H1.344C0.448 0 0 0.447999 0 1.344V43.648C0 44.544 0.448 44.992 1.344 44.992Z"
+                  fill="white"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M43.42 44.992H44.956C46.2787 44.992 47.5373 44.7147 48.732 44.16C49.9267 43.5627 50.7587 42.688 51.228 41.536H51.484V43.648C51.484 44.544 51.932 44.992 52.828 44.992H58.204C59.1427 44.992 59.612 44.544 59.612 43.648V13.696C59.612 12.8 59.1427 12.352 58.204 12.352H43.42C40.0493 12.352 37.4467 13.248 35.612 15.04C33.7773 16.832 32.86 19.4133 32.86 22.784V34.56C32.86 37.9307 33.7773 40.512 35.612 42.304C37.4467 44.096 40.0493 44.992 43.42 44.992ZM51.484 20.096V33.088C51.484 36.3307 50.012 37.952 47.068 37.952H44.7C43.3347 37.952 42.3747 37.6747 41.82 37.12C41.2653 36.5227 40.988 35.5413 40.988 34.176V23.168C40.988 21.8027 41.2653 20.8427 41.82 20.288C42.3747 19.6907 43.3347 19.392 44.7 19.392H50.716C51.228 19.392 51.484 19.6267 51.484 20.096Z"
+                  fill="white"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M76.545 44.992H78.081C79.4037 44.992 80.6623 44.7147 81.857 44.16C83.0517 43.5627 83.8837 42.688 84.353 41.536H84.609V43.648C84.609 44.544 85.057 44.992 85.953 44.992H91.329C92.2677 44.992 92.737 44.544 92.737 43.648V13.696C92.737 12.8 92.2677 12.352 91.329 12.352H76.545C73.1743 12.352 70.5717 13.248 68.737 15.04C66.9023 16.832 65.985 19.4133 65.985 22.784V34.56C65.985 37.9307 66.9023 40.512 68.737 42.304C70.5717 44.096 73.1743 44.992 76.545 44.992ZM84.609 20.096V33.088C84.609 36.3307 83.137 37.952 80.193 37.952H77.825C76.4597 37.952 75.4997 37.6747 74.945 37.12C74.3903 36.5227 74.113 35.5413 74.113 34.176V23.168C74.113 21.8027 74.3903 20.8427 74.945 20.288C75.4997 19.6907 76.4597 19.392 77.825 19.392H83.841C84.353 19.392 84.609 19.6267 84.609 20.096Z"
+                  fill="white"
+                />
+                <path
+                  d="M123.496 41.536V43.648C123.496 44.544 123.048 44.992 122.152 44.992H100.008C99.112 44.992 98.664 44.544 98.664 43.648V39.424C98.664 38.4853 99.112 38.016 100.008 38.016H112.936V37.76L100.392 20.864C99.7093 20.0107 99.368 18.9013 99.368 17.536V13.696C99.368 12.8 99.816 12.352 100.712 12.352H121.576C122.472 12.352 122.92 12.8 122.92 13.696V17.92C122.92 18.8587 122.472 19.328 121.576 19.328H108.712V19.584L122.28 37.824C123.091 38.848 123.496 40.0853 123.496 41.536Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+          </div>
+          <h3>monitoring the sky and detecting hazardous asteroids</h3>
+          <h5>by it_depends</h5>
+        </div>
+        <div class="login glass">
+          <div class="sub_title">
+            <div class="picto picto_spec" id="ast"></div>
+            <h4>asteroid</h4>
+          </div>
+          <form id="predictForm" action="{{ url_for('predict')}}" method="post">
+            <div class="range-container">
+              <svg viewBox="0 0 600 600" class="polygon">
+                <polygon
+                  id="pentagon"
+                  points="300,300 300,300 300,300 300,300 300,300"
+                ></polygon>
+              </svg>
+              <div class="slider-wrapper" id="wrapper1">
+                <div class="range-value" id="arangeValue1">
+                  <div id="rangeValue1">20</div>
+                  <span class="rangeValuelabel">est_diameter_min</span>
+                </div>
+                <input
+                  class="slider"
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="50"
+                  id="rangeSlider1"
+                  oninput="updateRangeValue(this, 40, 1)"
+                  name="est_diameter_min"
+                  required="required"
+                />
+              </div>
+              <div class="slider-wrapper" id="wrapper2">
+                <div class="range-value" id="arangeValue2">
+                  <div id="rangeValue2">45</div>
+                  <span class="rangeValuelabel">est_diameter_max</span>
+                </div>
+                <input
+                  class="slider"
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="50"
+                  id="rangeSlider2"
+                  oninput="updateRangeValue(this, 90, 2)"
+                  name="est_diameter_max"
+                  required="required"
+                />
+              </div>
+              <div class="slider-wrapper" id="wrapper3">
+                <div class="range-value" id="arangeValue3">
+                  <div id="rangeValue3">120000</div>
+                  <span class="rangeValuelabel">relative_velocity</span>
+                </div>
+                <input
+                  class="slider"
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="50"
+                  id="rangeSlider3"
+                  oninput="updateRangeValue(this, 240000, 3)"
+                  name="relative_velocity"
+                  required="required"
+                />
+              </div>
+              <div class="slider-wrapper" id="wrapper4">
+                <div class="range-value" id="arangeValue4">
+                  <span class="rangeValuelabel">miss_distance</span>
+                  <div id="rangeValue4">37500000</div>
+                </div>
+                <input
+                  class="slider"
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="50"
+                  id="rangeSlider4"
+                  oninput="updateRangeValue(this, 75000000, 4)"
+                  name="miss_distance"
+                  required="required"
+                />
+              </div>
+              <div class="slider-wrapper" id="wrapper5">
+                <div class="range-value" id="arangeValue5">
+                  <span class="rangeValuelabel">absolute_magnitude</span>
+                  <div id="rangeValue5">18</div>
+                </div>
+                <input
+                  class="slider"
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="50"
+                  id="rangeSlider5"
+                  oninput="updateRangeValue(this, 36, 5)"
+                  name="absolute_magnitude"
+                  required="required"
+                />
+              </div>
+            </div>
+            <button
+              type="submit"
+              class="btn btn-primary btn-block btn-large glass"
+            >
+              PREDICT
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="right">
+        <div class="upper-right glass">
+          <div class="sub_title">
+            <div class="picto" id="model"></div>
+            <h4>model</h4>
+          </div>
+          <div class="content1">
+            <div id="model_stats">
+              <div id="m_n">model name: <b>A. J. Frost</b></div>
+              <div id="m_t">model type: <b>XGBClassifier</b></div>
+              <div id="m_n" class="prog">
+                <div class="mod_par">precision:</div>
+                <div class="parent-div">
+                  <div id="prog_p" class="child-div"></div>
+                </div>
+                <div>
+                  <b> 0.30</b>
+                </div>
+              </div>
+              <div id="m_n" class="prog">
+                <div class="mod_par">recall:</div>
+                <div class="parent-div">
+                  <div id="prog_r" class="child-div"></div>
+                </div>
+                <div>
+                  <b> 1.00</b>
+                </div>
+              </div>
+              <div id="m_n" class="prog">
+                <div class="mod_par">f-1 score:</div>
+                <div class="parent-div">
+                  <div id="prog_f" class="child-div"></div>
+                </div>
+                <div>
+                  <b> 0.46</b>
+                </div>
+              </div>
+            </div>
+            <div class="content">
+              <p id="stats">{{ prediction_text | safe }}</p>
+              <p id="result">{{ pred_val | safe }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="mid-right glass">
+          <div class="sub_title">
+            <div class="picto" id="pred"></div>
+            <h4>prediction</h4>
+          </div>
+          <div class="prediction_result" id="final_result_wrap">
+            <span id="final_result"></span>
+          </div>
+        </div>
+        <div class="lower-right glass">
+          <div class="sub_title">
+            <div class="picto" id="new_db"></div>
+            <h4>new database</h4>
+          </div>
+          <div id="db">
+            <!-- Database grid header -->
+            <div>ID</div>
+            <div>est_diameter_min</div>
+            <div>est_diameter_max</div>
+            <div>relative_velocity</div>
+            <div>miss_distance</div>
+            <div>absolute_magnitude</div>
+            <div>hazardous</div>
+            <!-- Database grid content -->
+            {% for entry in database %}
+            <div>{{ entry.id }}</div>
+            <div>{{ entry.est_diameter_min }}</div>
+            <div>{{ entry.est_diameter_max }}</div>
+            <div>{{ entry.relative_velocity }}</div>
+            <div>{{ entry.miss_distance }}</div>
+            <div>{{ entry.absolute_magnitude }}</div>
+            <div class="{{ 'red' if entry.hazardous else 'green' }}">
+              {{ entry.hazardous }}
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      var resultElement = document.getElementById("result");
+      var statsElement = document.getElementById("stats");
+      var shapeElement = document.getElementById("pentagon");
+      var mainElement = document.getElementById("bgr_main");
+      var finalResultElement = document.getElementById("final_result");
+      var finalResultWrapElement = document.getElementById("final_result_wrap");
+      var smallCircleElement = document.getElementById("small_circle");
+      var largeCircleElement = document.getElementById("large_circle");
+
+      function updatePentagon() {
+        const radius = 200;
+        const centerX = 300;
+        const centerY = 300;
+        const angles = [0, 72, 144, 216, 288];
+        let points = "";
+
+        for (let i = 1; i <= 5; i++) {
+          const value = document.getElementById("rangeSlider" + i).value;
+          const angle = angles[i - 1] * (Math.PI / 180);
+          const x = centerX + radius * (value / 100) * Math.cos(angle);
+          const y = centerY + radius * (value / 100) * Math.sin(angle);
+          points += `${x},${y} `;
+        }
+
+        document
+          .getElementById("pentagon")
+          .setAttribute("points", points.trim());
+      }
+
+      function updateRangeValue(slider, maxVal, num) {
+        const actualValue = (slider.value / 100) * maxVal;
+        slider.setAttribute("value", actualValue);
+        document.getElementById("rangeValue" + num).textContent =
+          actualValue.toFixed(2);
+        updatePentagon();
+      }
+
+      function loadSliderValues() {
+        for (let i = 1; i <= 5; i++) {
+          const slider = document.getElementById("rangeSlider" + i);
+          const value = localStorage.getItem("slider" + i) || slider.value;
+          slider.value = value;
+          updateRangeValue(slider, getMaxValue(i), i);
+        }
+      }
+
+      function saveSliderValues() {
+        for (let i = 1; i <= 5; i++) {
+          const slider = document.getElementById("rangeSlider" + i);
+          localStorage.setItem("slider" + i, slider.value);
+        }
+      }
+
+      function getMaxValue(num) {
+        switch (num) {
+          case 1:
+            return 40;
+          case 2:
+            return 90;
+          case 3:
+            return 240000;
+          case 4:
+            return 75000000;
+          case 5:
+            return 36;
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        loadSliderValues(); // Load slider values from localStorage
+        //updatePentagon(); // Initial call to set the pentagon
+      });
+
+      document
+        .getElementById("predictForm")
+        .addEventListener("submit", function (event) {
+          saveSliderValues(); // Save slider values to localStorage
+        });
+
+      window.onload = function () {
+        if (resultElement.textContent.trim() === "1") {
+          statsElement.classList.remove("green");
+          statsElement.classList.add("red");
+          shapeElement.classList.remove("safe");
+          shapeElement.classList.add("danger");
+          mainElement.classList.remove("bgr_safe");
+          mainElement.classList.add("bgr_haz");
+          finalResultElement.textContent = "hazardous";
+          finalResultElement.classList.remove("green");
+          finalResultElement.classList.add("red");
+          finalResultWrapElement.classList.remove("safe");
+          finalResultWrapElement.classList.add("danger");
+          largeCircleElement.classList.remove("safe");
+          largeCircleElement.classList.add("danger");
+          smallCircleElement.classList.remove("safe");
+          smallCircleElement.classList.add("danger");
+        } else if (resultElement.textContent.trim() === "0") {
+          statsElement.classList.remove("red");
+          statsElement.classList.add("green");
+          shapeElement.classList.remove("danger");
+          shapeElement.classList.add("safe");
+          mainElement.classList.remove("bgr_haz");
+          mainElement.classList.add("bgr_safe");
+          finalResultElement.textContent = "safe";
+          finalResultElement.classList.remove("red");
+          finalResultElement.classList.add("green");
+          finalResultWrapElement.classList.remove("danger");
+          finalResultWrapElement.classList.add("safe");
+          largeCircleElement.classList.remove("danger");
+          largeCircleElement.classList.add("safe");
+          smallCircleElement.classList.remove("danger");
+          smallCircleElement.classList.add("safe");
+        }
+      };
+
+      document.querySelectorAll(".slider").forEach((slider) => {
+        slider.addEventListener("input", () => updatePentagon());
+      });
+    </script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script>
+      // Basic setup
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera(
+        75,
+        window.innerWidth / window.innerHeight,
+        0.1,
+        1000
+      );
+      const renderer = new THREE.WebGLRenderer({
+        antialias: true,
+        alpha: true,
+      }); // Enable alpha for transparency
+
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      document.getElementById("asteroid").appendChild(renderer.domElement);
+
+      // Create an irregular geometry and a material for the meteor shape
+      const geometry = new THREE.DodecahedronGeometry(1, 1);
+
+      // Scale geometry to make it elongated
+      geometry.scale(1, 1, 2);
+
+      // Create the mesh with a basic material
+      const material = new THREE.MeshBasicMaterial({
+        color: 0x000000,
+        wireframe: false,
+      });
+      const mesh = new THREE.Mesh(geometry, material);
+      scene.add(mesh);
+
+      // Create edges geometry and line material
+      const edges = new THREE.EdgesGeometry(geometry);
+      const edgeMaterial = new THREE.LineBasicMaterial({
+        color: 0xffffff,
+        linewidth: 1,
+      });
+      const line = new THREE.LineSegments(edges, edgeMaterial);
+      scene.add(line);
+
+      // Set the camera position
+      camera.position.z = 5;
+
+      // Animation loop
+      function animate() {
+        requestAnimationFrame(animate);
+
+        // Rotate the meteor shape
+        mesh.rotation.y += 0.0025; // Slower rotation around y-axis
+        line.rotation.y += 0.0025; // Ensure the line matches the mesh rotation
+
+        renderer.render(scene, camera);
+      }
+
+      animate();
+
+      // Adjust the scene on window resize
+      window.addEventListener("resize", () => {
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+      });
+    </script> -->
+  </body>
+</html>
